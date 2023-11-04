@@ -14,7 +14,7 @@ public class Moditems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MODID);
 
     public static final RegistryObject<Item> COIN = ITEMS.register("coin",
-            () -> new Item(new Item.Properties()))
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
