@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.phi.testmod.block.ModBlocks;
 import net.phi.testmod.item.ModCreativeTabs;
 import net.phi.testmod.item.Moditems;
 import org.slf4j.Logger;
@@ -25,8 +26,9 @@ public class TestMod
     public TestMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        Moditems.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
+        Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

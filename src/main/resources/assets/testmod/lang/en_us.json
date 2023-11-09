@@ -1,4 +1,6 @@
 {
   "item.testmod.coin": "Coin",
-  "creative.test_mod": "test mod"
+  "creative.test_mod": "test mod",
+  "block.testmod.coin_block": "Block of Coin",
+  "block.testmod.raw_coin_block": "Block of Raw Coin"
 }

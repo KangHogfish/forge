@@ -5,10 +5,12 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.phi.testmod.TestMod;
+import net.phi.testmod.block.ModBlocks;
 
 public class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
@@ -22,6 +24,9 @@ public class ModCreativeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(Moditems.COIN.get());
                         pOutput.accept(Items.DIAMOND);
+                        pOutput.accept(ModBlocks.COIN_BLOCK.get());
+                        pOutput.accept(Moditems.RAW_COIN.get());
+                        pOutput.accept(ModBlocks.RAW_COIN_BLOCK.get());
                     })
                     .build());
 }
