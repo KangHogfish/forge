@@ -29,6 +29,12 @@ public class ModBlocks {
                     .Properties.copy(Blocks.IRON_BLOCK)
                     .sound(SoundType.SAND)
             ));
+    public static final RegistryObject<Block> RAW_POLISHING_STATION = registerBlock("raw_polishing_station",
+            () -> new Block(BlockBehaviour
+                    .Properties.copy(Blocks.IRON_BLOCK)
+                    .sound(SoundType.SAND)
+                    .noOcclusion()
+            ));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
