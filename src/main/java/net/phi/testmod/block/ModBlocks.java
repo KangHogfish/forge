@@ -36,7 +36,6 @@ public class ModBlocks {
                     .noLootTable(), BlockSetType.STONE, 20, false));
     public static final RegistryObject<Block> COIN_DOOR = registerBlock("coin_door",
             () -> new DoorBlock(BlockBehaviour.Properties.of()
-                    .mapColor(Blocks.IRON_BLOCK.defaultMapColor())
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(3.0F)
                     .noOcclusion()
