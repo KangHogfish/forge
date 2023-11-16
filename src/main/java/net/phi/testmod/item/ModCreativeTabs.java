@@ -27,6 +27,9 @@ public class ModCreativeTabs {
                         pOutput.accept(ModBlocks.COIN_BLOCK.get());
                         pOutput.accept(Moditems.RAW_COIN.get());
                         pOutput.accept(ModBlocks.RAW_COIN_BLOCK.get());
+                        pOutput.accept(ModBlocks.COIN_BUTTON.get());
+                        pOutput.accept(ModBlocks.COIN_DOOR.get());
+                        pOutput.accept(ModBlocks.COIN_STAIRS.get());
                     })
                     .build());
 }

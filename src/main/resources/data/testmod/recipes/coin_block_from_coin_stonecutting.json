@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "testmod:coin"
-  },
-  "result": "testmod:coin_block"
-}

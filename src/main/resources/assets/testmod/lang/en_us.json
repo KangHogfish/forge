@@ -2,5 +2,7 @@
   "item.testmod.coin": "Coin",
   "creative.test_mod": "test mod",
   "block.testmod.coin_block": "Block of Coin",
-  "block.testmod.raw_coin_block": "Block of Raw Coin"
+  "block.testmod.raw_coin_block": "Block of Raw Coin",
+  "block.testmod.coin_door": "Door of Coin",
+  "block.testmod.coin_button": "Button of Coin"
 }

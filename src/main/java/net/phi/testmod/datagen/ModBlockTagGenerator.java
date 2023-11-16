@@ -23,7 +23,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.COIN_BLOCK.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.COIN_BLOCK.get());
+                .add(ModBlocks.COIN_BLOCK.get())
+                .add(ModBlocks.RAW_COIN_BLOCK.get());
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.RAW_COIN_BLOCK.get());
     }

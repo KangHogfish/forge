@@ -1,11 +1,11 @@
 package net.phi.testmod.datagen;
 
-import com.google.common.eventbus.Subscribe;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.phi.testmod.TestMod;
 
@@ -13,7 +13,7 @@ import java.util.concurrent.CompletableFuture;
 
 @Mod.EventBusSubscriber(modid = TestMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
-    @Subscribe
+    @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
@@ -28,6 +28,5 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(),
                 new ModItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
     }
-
     }
 

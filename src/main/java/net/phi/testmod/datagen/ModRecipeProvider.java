@@ -2,6 +2,7 @@ package net.phi.testmod.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -16,7 +17,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
-    private static final List<ItemLike> COIN_SMELTABLES = List.of(Moditems.RAW_COIN.get());
+    private static final List<ItemLike> COIN_SMELTABLES = List.of(Moditems.RAW_COIN.get(), Items.SAND);
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
